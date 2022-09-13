@@ -17,8 +17,8 @@ router.get('/projects', async (req, res) => {
 			address: 1,
 			postedDate: 1,
 			bidDeadline: 1,
-		});
-	// .sort({ postedDate: -1, active: -1 });
+		})
+		.sort({ postedDate: -1, active: -1 });
 
 	res.send(projects);
 });

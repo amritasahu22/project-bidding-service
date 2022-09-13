@@ -21,7 +21,7 @@ export function validateProject(project: ProjectDTO): ValidationResult {
 		address: {
 			postcode: Joi.number().required(),
 		},
-		customerId: joiObjId().required(),
+		// customerId: joiObjId().required(),
 	});
 	return schema.validate(project);
 }

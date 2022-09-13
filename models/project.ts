@@ -36,7 +36,7 @@ export const projectSchema = new Schema({
 	bidDeadline: { type: Date, required: true },
 	status: {
 		type: String,
-		enum: ['active', 'cancelled', 'assigned', 'complete'],
+		enum: ['active', 'cancelled', 'assigned', 'complete', 'bidComplete'],
 		default: 'active',
 		lowercase: true,
 	},

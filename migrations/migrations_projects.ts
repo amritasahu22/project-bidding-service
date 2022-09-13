@@ -4,8 +4,8 @@ import { mockProjectData, mockCustomerData, mockTradieData } from './mock_data';
 
 export class ProjectMigration implements MigrationInterface {
 	async up(db: Db): Promise<any> {
-		//await (await db.createCollection('customers')).insertMany(mockCustomerData);
-		//await (await db.createCollection('tradies')).insertMany(mockTradieData);
+		await (await db.createCollection('customers')).insertMany(mockCustomerData);
+		await (await db.createCollection('tradies')).insertMany(mockTradieData);
 		await (await db.createCollection('projects')).insertMany(mockProjectData);
 	}
 

@@ -1,6 +1,6 @@
 import { connect as _connect, connection } from 'mongoose';
 
-const dbUrl = process.env.DB_URL || 'mongodb://localhost/project-bidding';
+const dbUrl = process.env.DB_URL || 'mongodb://localhost/project-bidding-db';
 
 const connect = async () => {
 	await _connect(dbUrl);
